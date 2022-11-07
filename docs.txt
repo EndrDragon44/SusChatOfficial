@@ -1,9 +1,0 @@
-        DOCUMENTATION FOR NEW MEMBERS
------------------------------------------------
-                    Intro
-              ----------------
-            Hello. If you're reading this, you most likely got invited here by either me (Tanner) or Emmet. This is the SusChat Foundation. We are working on this social media, and you are too. This is the helpful documentation written by Tanner for you to reference.
-              ----------------
-            1. Basic CSS
-          ---------------
-    Let's face it, you gotta start somewhere. You can't become super hackers like me and Emmet in a day. We're probably gonna start you off managing the CSS portion of things. 

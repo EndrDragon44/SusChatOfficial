@@ -1,18 +1,31 @@
 <!DOCTYPE html>
  <html>
    <head>
-     <header style="font-size:60px;color:white">SusChat</header>
-      <header style="font-size:25px">The place that is suspicious</header>
      
-     <script><noscript>You need JavaScript on to run this, idiot. 😠🖕</noscript></script>
+<script type="module">const user = await getUserInfo() </script>
+     <title>SusChat</title>
+     <header style="font-size:60px;color:white">SusChat</header>
+      <header style="font-size:25px;color:white">The place that is suspicious</header>
+    	   			 		 
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lowdb/1.0.0/low.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/falcor/2.3.2/falcor.all.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/rxdb/13.8.3/rxdb.browserify.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/localStorage/2.0.1/localStorage.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/simple-peer/9.11.1/simplepeer.min.js"></script>
+<script><noscript>You need JavaScript on to run this, idiot. 😠🖕</noscript></script>
      <!--Hello-->
      <script type="module"src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
      <style>
-       body{
+       html{
          text-align:center;
-        background-image: url("th.jpg");
+        background-image: url("Backgrounds/th.jpg");
        }
+			 head {
+				 color: white;
+				 
+			 }
        p {
          color:white;
        }
@@ -43,36 +56,53 @@
 	position:relative;
 	top:1px;
 }
+a {
+  color:white;
+         font-size:20px;
+}
      </style>
      <script src="https://replit.com/public/js/repl-auth-v2.js"></script>
    <script type="module">const user = await getUserInfo() </script>
    </head>
 
    <body>
+		<h>Upload message data</h><br><input style="color:white" name=”SusChat-Data” accept=”json” type="file"></input><br>
      <h>Nickname (If you don't have Replit)</h>
      <input type="text" id="nickname"> </input><br>
      
      <button onclick="LoginWithReplit()" class="submit">WORK IN PROGRESS REPLIT LOGIN</button><br>
-     <h height="10px" width="10px">Hello, <p id="nickrend"></h><br>
+		 <!---!->EmmetJS</!-->
+     <h height="10px" width="10px">Hello <p id="nickrend"></p></h><br>
      <input type="text" id="sus_;)">
      <button onclick="post()" id="submit" class="submit">Submit</button>
      <p id="render">
      <script>
-       //JavaScript
-       //Emmet don't touch
+       //JavaScript below is Emmet authorized for tesing ig idfk xP
+		while (true){
+    // the forever funtcion is not working, help!
+			//Also help me figure out about the nickname adder.
+			var name = 
+				 ", " + nikocado; + "!"; document.getElementById("nickrend").innerHTML.value =
+				 name;
+}
+			
+
+       //Emmet don't touch below THIS comment
        //NO TOUCHIES!!!
+       // ok uwu *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* *giggle* 
+      //TO HELL WITH THEE
        function post() {
-        
+       
          var nikocado = document.getElementById("nickname").value;
          var avocado = document.getElementById("nickrend").innerHTML;
-    var emmet1 = document.getElementById("sus_;)").value;
+    		 var emmet1 = document.getElementById("sus_;)").value;
                         if (nikocado == "") {
                         let newb = document.createElement("p");
                         newb.innerHTML =  "Anonymous said: " + emmet1;
               document.getElementById("render").appendChild(newb);
                         } else {
                         let newb = document.createElement("p");
-                        newb.innerHTML = nikocado + " said: " + emmet1;
+                        newb.innerHTML =  nikocado + " said: " + emmet1;
                        document.getElementById("render").appendChild(newb);
                         }
       if (emmet1 == "CAT" || emmet1 == "cat" || emmet1 == "Cat") {
@@ -80,7 +110,11 @@
       }
          //Censorship (KEEP IT CLEAN)
          if (emmet1 == "FUCK" || emmet1 == "Fuck" || emmet1 == "fuck") {
-           newb.innerHTML = "Anonymous said " + "Flip"
+           if (nikocado=""){
+           newb.innerHTML = "Anonymous said " + "Frick"; 
+           } else {
+             newb.innerHTML = nikocado + " said: Frick"
+           }
          }
          if (emmet1 == "Shit" || emmet1 == "shit" || emmet1 == "SHIT") {
            newb.innerHTML =  "Anonymous said: " + "slip"
@@ -96,5 +130,5 @@
    </body>
    <p>--------------------------</p>
    <footer id="b_footer" class="b_footer" role="contentinfo" aria-label="Footer" data-bm="33"><div>Other projects we made</div><br><a href="https://doomsdaybear.github.io">Online Notebook</a><br>
-   <img src="OIP.jpg" height="80px" width="80px">
- </html> <!--100 LINES LETS GOO-->
+   <img src="Backgrounds/OIP.jpg" height="45px" width="58.5px">
+ </html> <!--100+ LINES LETS GOO-->

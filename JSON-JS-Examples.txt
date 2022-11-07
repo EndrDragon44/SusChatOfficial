@@ -1,0 +1,24 @@
+Converting a JSON Text to a JavaScript Object
+A common use of JSON is to read data from a web server, and display the data in a web page.
+
+For simplicity, this can be demonstrated using a string as input.
+
+First, create a JavaScript string containing JSON syntax:
+
+let text = '{ "employees" : [' +
+'{ "firstName":"John" , "lastName":"Doe" },' +
+'{ "firstName":"Anna" , "lastName":"Smith" },' +
+'{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+Then, use the JavaScript built-in function JSON.parse() to convert the string into a JavaScript object:
+
+const obj = JSON.parse(text);
+Finally, use the new JavaScript object in your page:
+
+Example
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+obj.employees[1].firstName + " " + obj.employees[1].lastName;
+</script>
+-------------------------------------------------------
