@@ -2,7 +2,10 @@
 -----------------------------------------------
                     Intro
               ----------------
-            Hello. If you're reading this, you most likely got invited here by either me (Tanner) or Emmet. This is the SusChat Foundation. We are working on this social media, and you are too. This is the helpful documentation written by Tanner for you to reference.
+            Hello. If you're reading this, you most likely got invited here by either me (Tanner) or Emmet. 
+This is the SusChat Foundation. The name is subject to change. We are working on this social media, and you are too. This is the helpful documentation written by Tanner for you to reference.
+
+
               ----------------
             1. Basic CSS
           ---------------
