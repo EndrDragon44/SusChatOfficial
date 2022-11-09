@@ -1,6 +1,6 @@
 # SusChatOfficial
 This is a project not made to be popular. It is a social media that we work on in our free time. We are the first 7th graders
-to ever make a social media.  If you have questions, or comments, goto the forum on the repo page.
+to ever make a social media.  If you have questions, or comments, goto the forum on the repo page, or email us.
 # What we need
 We need programmers who can help set up PHP, Server-side-hosting for send messages to all users on the site, and HTML designers.
 # Help us
