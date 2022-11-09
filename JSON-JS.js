@@ -1,4 +1,5 @@
-//Below converts the displayed messages on screen to a JSON file. It may not be specifically JavaScript to JSON, it may be HTML to JavaScript if it is easier to implement.
+//copy a set of html tags to a json file.
+
 function Export() {
   let test = '{ "List" : [' +
 '{ "nickname":"" , "Message":"" }]}';
