@@ -6,9 +6,8 @@ For simplicity, this can be demonstrated using a string as input.
 First, create a JavaScript string containing JSON syntax:
 
 let text = '{ "employees" : [' +
-'{ "firstName":"John" , "lastName":"Doe" },' +
-'{ "firstName":"Anna" , "lastName":"Smith" },' +
-'{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+'{ "nickname":"173" , "Message":"Skadoodle skadoken, your neck is now broken!" }]}';
+
 Then, use the JavaScript built-in function JSON.parse() to convert the string into a JavaScript object:
 
 const obj = JSON.parse(text);
