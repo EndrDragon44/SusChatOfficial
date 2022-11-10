@@ -1,5 +1,8 @@
 { pkgs }: {
   deps = [
+    pkgs.notmuch-bower
+    pkgs.imagemagick6_light
+    pkgs.nodejs-16_x
     pkgs.apacheHttpdPackages.php
     pkgs.sysvinit
     pkgs.root5
