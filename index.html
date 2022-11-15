@@ -1,13 +1,32 @@
 <!DOCTYPE html>
  <html>
    <head>
-		 <title>TanningChat Social Media</title>
+		 <header><div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>
+</div></header>
+		 
+		 <style>
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+</style>
+		 <title>ChattingLab Social Media</title>
 		 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		 <script comment="EI">import { initializeApp } from 'firebase/app';
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
   //emmet why is the constant a function?
+	//i got this off of google idk
 };
 
 const app = initializeApp(firebaseConfig);
@@ -17,10 +36,9 @@ function Export() {
 '{ "nickname":"" , "Message":"" }]}';
 
 }
-			//Below convers the uploaded JSON File from the user, checks the ID inside the JSON to confirm it was created with this site, and if it is valid, imports the messages inside back onto the screen. Like in the previous function, it may be HTML to JSON if it is easier to implement.
+			//Below converts the uploaded JSON File from the user, checks the ID inside the JSON to confirm it was created with this site, and if it is valid, imports the messages inside back onto the screen. Like in the previous function, it may be HTML to JSON if it is easier to implement.
 function Import() {
-	
-
+	//CAMEL BY CAMEL
 	
 }
 		 </script>
@@ -43,9 +61,13 @@ function Import() {
      <script type="module"src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
      <style>
-       html{
-         text-align:center;
-        background-image: url("Backgrounds/th.jpg");
+			
+       body{
+          text-align: center;
+        	font-family: 'Kalam', cursive;
+				  background-color: black;
+				 
+				 font-family : Fantasy , papyrus, serif;
        }
 			 head {
 				 color: white;
@@ -58,6 +80,9 @@ function Import() {
          color:white;
          font-size:20px;
        }
+			 .footer_text {
+				 color:white; 
+			 }
        .submit {
 	box-shadow:inset 0px 1px 0px 0px #e184f3;
 	background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
@@ -90,8 +115,21 @@ a {
    <script type="module">const user = await getUserInfo() </script>
    </head>
 
-   <body>
-		<h>Upload message data</h><br><input style="color:white" name=”SusChat-Data” accept=”json” type="file"></input><br>
+   <body background="Backgrounds/th.jpg">
+     <h id="hackermodesign"></h>
+		  <header id="b_footer" class="b_footer" role="contentinfo" aria-label="Footer" data-bm="33"><a id="footer_text" onclick="cat()">Other projects we made</a><br><a href="https://doomsdaybear.github.io">Online Notebook</a><br><a href="https://github.com/EndrDragon44/SusChatOfficial">   Our GitHub</a><br>
+   <img src="Backgrounds/OIP.jpg" height="45px" width="58.5px" >
+     <script>
+       //JavaScript below is Emmet authorized for tesing ig idfk xP
+
+			function cat() {
+				alert("you get the UWU E-GIRL DISCORD KITTEN virus");
+				alert("Now, say meow...");
+			}
+				</script>
+	 </header>
+     <div id="miscwrapper">
+		<h>Upload message data</h><br><input style="color:white" name=”SusChat-Data” accept=”json” type="file" id="filez" f></input><br>
      <h>Nickname (If you don't have Replit)</h>
      <input type="text" id="nickname"> </input><br>
      
@@ -101,20 +139,18 @@ a {
      <p id="nickrend">
      <input type="text" id="sus_;)">
      <button onclick="post()" id="submit" class="submit">Submit</button>
-     <p id="render">
-      <p id="joshin">
-     <script>
-       //JavaScript below is Emmet authorized for tesing ig idfk xP
-
-			function cat() {
-				alert("you get the UWU E-GIRL DISCORD KITTEN virus you must s a t i s f y  me to remove uwu");
-				alert("Now, SATISFY ME KITTEN");
-				
-			}
+     <p id="render">Messages go here!</p>
+      <div id="joshin">
+         <p>--------------------------</p>
+  
+		 <script>
       //TO HELL WITH THEE
        function post() {
     // the forever funtcion is not working, help!
-
+        var file = document.getElementById("filez").value; //Correct DOM?
+				 // what?
+         document.getElementById("joshin").innerHTML = file; // C:/folder/file.extension
+				 //you gotta help me do this Xd
          var nikocado = document.getElementById("nickname").value;
          var avocado = document.getElementById("nickrend").innerHTML;
     		 var emmet1 = document.getElementById("sus_;)").value;
@@ -129,10 +165,15 @@ a {
                         newb.innerHTML =  nikocado + " said: " + emmet1;
                        document.getElementById("render").appendChild(newb);
                         }
+         if(emmet1 == "./root") {
+           document.body.style.backgroundColor = "black";
+           document.head.style.backgroundColor = "black";
+           document.getElementById("hackermodesign").innerHTML = "Hacker Mode Activated"
+         }
       if (emmet1 == "CAT" || emmet1 == "cat" || emmet1 == "Cat") {
-        newb.innerHTML = "meowmeowmeow 🐈🐱😻🐱😾";
+        newb.innerHTML = "meowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeow 🐈🐱😻🐱😾";
       }
-         //Censorship (KEEP IT CLEAN)
+         //welp we tried :/
          if (emmet1 == "FUCK" || emmet1 == "Fuck" || emmet1 == "fuck") {
            if (nikocado=""){
            newb.innerHTML = "Anonymous said " + "Frick"; 
@@ -149,11 +190,9 @@ a {
          if (emmet1.includes("Nezuko")) {
            newb.innerHTML = Date() + " said: " + " BEST WAIFU?";
          }
-      
+          
         }
      </script>
+			</div>
    </body>
-   <p>--------------------------</p>
-   <footer id="b_footer" class="b_footer" role="contentinfo" aria-label="Footer" data-bm="33"><div onclick="cat()">Other projects we made</div><br><a href="https://doomsdaybear.github.io">Online Notebook</a><br><a href="https://github.com/EndrDragon44/SusChatOfficial">   Our GitHub</a><br>
-   <img src="Backgrounds/OIP.jpg" height="45px" width="58.5px">
  </html> <!--100+ LINES LETS GOO-->
