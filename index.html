@@ -1,13 +1,27 @@
 <!DOCTYPE html>
  <html>
    <head>
-		 <title>TanningChat Social Media</title>
+		 <header><div class="navbar">
+  <a href="https://doomsdaybear.github.io/">|Notebook (other project)|</a>
+  <a href="https://github.com/EndrDragon44/SusChatOfficial">|Our GitHub|</a>
+	<a href="https://endrdragon44.github.io/SusChatOfficial/">|GitHub Pages Site (not up-to-date with this one)|</a>
+	<a href="https://github.com/EndrDragon44/SusChatOfficial/blob/24ed9ae39eb85f3b5970bd77931f27adf1efbf35/Intructions_For_New_Coders/README.md">|Wanna help?|</a>
+			 <a href="https://github.com/EndrDragon44/SusChatOfficial/blob/24ed9ae39eb85f3b5970bd77931f27adf1efbf35/Intructions_For_New_Coders/README.md">|Have questions?|</a>
+  <div class="dropdown">
+  </div>
+</div></header>
+		 
+		 <style>
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+</style>
+		 <title>ChattingLab Social Media</title>
 		 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		 <script comment="EI">import { initializeApp } from 'firebase/app';
 
 // TODO: Replace the following with your app's Firebase project configuration
 const firebaseConfig = {
-  //...
+  //emmet why is the constant a function?
+	//i got this off of google idk
 };
 
 const app = initializeApp(firebaseConfig);
@@ -17,10 +31,9 @@ function Export() {
 '{ "nickname":"" , "Message":"" }]}';
 
 }
-			//Below convers the uploaded JSON File from the user, checks the ID inside the JSON to confirm it was created with this site, and if it is valid, imports the messages inside back onto the screen. Like in the previous function, it may be HTML to JSON if it is easier to implement.
+			//Below converts the uploaded JSON File from the user, checks the ID inside the JSON to confirm it was created with this site, and if it is valid, imports the messages inside back onto the screen. Like in the previous function, it may be HTML to JSON if it is easier to implement.
 function Import() {
-	
-
+	//CAMEL BY CAMEL
 	
 }
 		 </script>
@@ -29,7 +42,7 @@ function Import() {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
 <script type="module">const user = await getUserInfo() </script>
 
-     <header style="font-size:60px;color:white">TanningChat</header>
+     <img src="Backgrounds/logo.png">
       <header style="font-size:25px;color:white">The social media made by 7th graders.</header>
     	   			 		 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.30.1/date_fns.min.js"></script>
@@ -43,9 +56,13 @@ function Import() {
      <script type="module"src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
      <style>
-       html{
-         text-align:center;
-        background-image: url("Backgrounds/th.jpg");
+			
+       body{
+          text-align: center;
+        	font-family: 'Kalam', cursive;
+				  background-color: black;
+				 
+				
        }
 			 head {
 				 color: white;
@@ -57,7 +74,11 @@ function Import() {
        h {
          color:white;
          font-size:20px;
+				 font-family: Fantasy , papyrus, serif;
        }
+			 .footer_text {
+				 color:white; 
+			 }
        .submit {
 	box-shadow:inset 0px 1px 0px 0px #e184f3;
 	background:linear-gradient(to bottom, #c123de 5%, #a20dbd 100%);
@@ -90,8 +111,57 @@ a {
    <script type="module">const user = await getUserInfo() </script>
    </head>
 
-   <body>
-		<h>Upload message data</h><br><input style="color:white" name=”SusChat-Data” accept=”json” type="file"></input><br>
+   <body background="Backgrounds/th.jpg">
+     <h id="hackermodesign"></h>
+		  <header id="b_footer" class="b_footer" role="contentinfo" aria-label="Footer" data-bm="33"><a id="footer_text" onclick="cat()">Other projects we made</a><br><a href="https://doomsdaybear.github.io">Online Notebook</a><br><a href="https://github.com/EndrDragon44/SusChatOfficial">   Our GitHub</a><br>
+   <img src="Backgrounds/OIP.jpg" height="45px" width="58.5px" >
+     <script>
+       //JavaScript below is Emmet authorized for tesing ig idfk xP
+
+			function cat() {
+				alert("you get the UWU E-GIRL DISCORD KITTEN virus");
+				alert("Now, say meow...");
+			}
+				</script>
+	 </header>
+     <div id="miscwrapper">
+		<h>Upload message data</h><br>
+			 <--!---Import the uploaded json file, check the id to ensure it was generated with this website, and transfer it to the JSON-JS.js file for importation process. >--!--->
+				 
+				 <script src="https://unpkg.com/json-js@1.0.0/dist/json.js"></script>
+				 
+				 <script type="module">const json = await getJSON()</script>
+				 <--!-Create a input element that only accepts JSON Files that can be shared with the import process 
+					 
+					 <input class="submit" type="file" accept="text/plain" id="jsonfile" onchange="upload()" /><br>
+					 <script type="module">const jsonfile = document.getElementById("jsonfile")</script>
+					 <--!-Create a button that will trigger the import process and send the JSON file to the server
+						 
+						 <button id="jsonbutton" onclick="import()">Import</button>
+					 
+					 <script>
+						 function import() {
+							 
+							 var jsonfile = document.getElementById("jsonfile");
+							 
+							 if (jsonfile.files.length > 0) {
+								 
+								 var reader = new FileReader();
+								 
+								 reader.onload = function(e) {
+									 
+									 var json = JSON.parse(e.target.result);
+									 
+									 //console.log(json);
+									 
+									 //console.log(json.id);
+									 
+									 //console.log
+									 
+									 //console.log(json.id);
+									 
+									 </script>
+			 <br>
      <h>Nickname (If you don't have Replit)</h>
      <input type="text" id="nickname"> </input><br>
      
@@ -101,20 +171,18 @@ a {
      <p id="nickrend">
      <input type="text" id="sus_;)">
      <button onclick="post()" id="submit" class="submit">Submit</button>
-     <p id="render">
-      <p id="joshin">
-     <script>
-       //JavaScript below is Emmet authorized for tesing ig idfk xP
-
-			function cat() {
-				alert("you get the UWU E-GIRL DISCORD KITTEN virus you must s a t i s f y  me to remove uwu");
-				alert("Now, SATISFY ME KITTEN");
-				
-			}
+     <p id="render">Messages go here!</p>
+      <div id="joshin">
+         <p>--------------------------</p>
+  
+		 <script>
       //TO HELL WITH THEE
        function post() {
     // the forever funtcion is not working, help!
-
+        var file = document.getElementById("filez").value; //Correct DOM?
+				 // what?
+         document.getElementById("joshin").innerHTML = file; // C:/folder/file.extension
+				 //you gotta help me do this Xd
          var nikocado = document.getElementById("nickname").value;
          var avocado = document.getElementById("nickrend").innerHTML;
     		 var emmet1 = document.getElementById("sus_;)").value;
@@ -129,10 +197,15 @@ a {
                         newb.innerHTML =  nikocado + " said: " + emmet1;
                        document.getElementById("render").appendChild(newb);
                         }
+         if(emmet1 == "./root") {
+           document.body.style.backgroundColor = "black";
+           document.head.style.backgroundColor = "black";
+           document.getElementById("hackermodesign").innerHTML = "Hacker Mode Activated"
+         }
       if (emmet1 == "CAT" || emmet1 == "cat" || emmet1 == "Cat") {
-        newb.innerHTML = "meowmeowmeow 🐈🐱😻🐱😾";
+        newb.innerHTML = "meowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeow 🐈🐱😻🐱😾";
       }
-         //Censorship (KEEP IT CLEAN)
+         //welp we tried :/
          if (emmet1 == "FUCK" || emmet1 == "Fuck" || emmet1 == "fuck") {
            if (nikocado=""){
            newb.innerHTML = "Anonymous said " + "Frick"; 
@@ -149,11 +222,9 @@ a {
          if (emmet1.includes("Nezuko")) {
            newb.innerHTML = Date() + " said: " + " BEST WAIFU?";
          }
-      
+          
         }
      </script>
+			</div>
    </body>
-   <p>--------------------------</p>
-   <footer id="b_footer" class="b_footer" role="contentinfo" aria-label="Footer" data-bm="33"><div onclick="cat()">Other projects we made</div><br><a href="https://doomsdaybear.github.io">Online Notebook</a><br><a href="https://github.com/EndrDragon44/SusChatOfficial">   Our GitHub</a><br>
-   <img src="Backgrounds/OIP.jpg" height="45px" width="58.5px">
- </html> <!--100+ LINES LETS GOO-->
+ </html> <!--194+ LINES LETS GOO-->
