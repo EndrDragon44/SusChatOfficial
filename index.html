@@ -2,11 +2,11 @@
  <html>
    <head>
 		 <header><div class="navbar">
-  <a href="https://doomsdaybear.github.io/">Home</a>
-  <a href="https://github.com/EndrDragon44/SusChatOfficial">Our GitHub</a>
-	<a href="endrdragon44.github.io/SusChatOfficial/">GitHub Pages Site (not up-to-date with this one)</a>
-	<a href="https://github.com/EndrDragon44/SusChatOfficial/blob/24ed9ae39eb85f3b5970bd77931f27adf1efbf35/Intructions_For_New_Coders/README.md">Wanna help?</a>
-			 <a href="https://github.com/EndrDragon44/SusChatOfficial/blob/24ed9ae39eb85f3b5970bd77931f27adf1efbf35/Intructions_For_New_Coders/README.md">Have questions?</a>
+  <a href="https://doomsdaybear.github.io/">|Notebook (other project)|</a>
+  <a href="https://github.com/EndrDragon44/SusChatOfficial">|Our GitHub|</a>
+	<a href="https://endrdragon44.github.io/SusChatOfficial/">|GitHub Pages Site (not up-to-date with this one)|</a>
+	<a href="https://github.com/EndrDragon44/SusChatOfficial/blob/24ed9ae39eb85f3b5970bd77931f27adf1efbf35/Intructions_For_New_Coders/README.md">|Wanna help?|</a>
+			 <a href="https://github.com/EndrDragon44/SusChatOfficial/blob/24ed9ae39eb85f3b5970bd77931f27adf1efbf35/Intructions_For_New_Coders/README.md">|Have questions?|</a>
   <div class="dropdown">
   </div>
 </div></header>
@@ -62,7 +62,7 @@ function Import() {
         	font-family: 'Kalam', cursive;
 				  background-color: black;
 				 
-				 font-family : Fantasy , papyrus, serif;
+				
        }
 			 head {
 				 color: white;
@@ -74,6 +74,7 @@ function Import() {
        h {
          color:white;
          font-size:20px;
+				 font-family: Fantasy , papyrus, serif;
        }
 			 .footer_text {
 				 color:white; 
@@ -124,7 +125,43 @@ a {
 				</script>
 	 </header>
      <div id="miscwrapper">
-		<h>Upload message data</h><br><input style="color:white" name=”SusChat-Data” accept=”json” type="file" id="filez" f></input><br>
+		<h>Upload message data</h><br>
+			 <--!---Import the uploaded json file, check the id to ensure it was generated with this website, and transfer it to the JSON-JS.js file for importation process. >--!--->
+				 
+				 <script src="https://unpkg.com/json-js@1.0.0/dist/json.js"></script>
+				 
+				 <script type="module">const json = await getJSON()</script>
+				 <--!-Create a input element that only accepts JSON Files that can be shared with the import process 
+					 
+					 <input class="submit" type="file" accept="text/plain" id="jsonfile" onchange="upload()" /><br>
+					 <script type="module">const jsonfile = document.getElementById("jsonfile")</script>
+					 <--!-Create a button that will trigger the import process and send the JSON file to the server
+						 
+						 <button id="jsonbutton" onclick="import()">Import</button>
+					 
+					 <script>
+						 function import() {
+							 
+							 var jsonfile = document.getElementById("jsonfile");
+							 
+							 if (jsonfile.files.length > 0) {
+								 
+								 var reader = new FileReader();
+								 
+								 reader.onload = function(e) {
+									 
+									 var json = JSON.parse(e.target.result);
+									 
+									 //console.log(json);
+									 
+									 //console.log(json.id);
+									 
+									 //console.log
+									 
+									 //console.log(json.id);
+									 
+									 </script>
+			 <br>
      <h>Nickname (If you don't have Replit)</h>
      <input type="text" id="nickname"> </input><br>
      
@@ -166,7 +203,7 @@ a {
            document.getElementById("hackermodesign").innerHTML = "Hacker Mode Activated"
          }
       if (emmet1 == "CAT" || emmet1 == "cat" || emmet1 == "Cat") {
-        newb.innerHTML = "meowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeow 🐈🐱😻🐱😾";
+        newb.innerHTML = "meowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeowmeow 🐈🐱😻🐱😾";
       }
          //welp we tried :/
          if (emmet1 == "FUCK" || emmet1 == "Fuck" || emmet1 == "fuck") {
@@ -190,4 +227,4 @@ a {
      </script>
 			</div>
    </body>
- </html> <!--100+ LINES LETS GOO-->
+ </html> <!--194+ LINES LETS GOO-->
